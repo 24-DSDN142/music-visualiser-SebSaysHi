@@ -1,87 +1,46 @@
 
+let cheer
 // vocal, drum, bass, and other are volumes ranging from 0 to 100
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
-  background(225)
+  if(counter==0){
+cheer = loadImage("Cheering-1.png")
+  }
+  background(200)
   textFont('Verdana'); // please use CSS safe fonts
   rectMode(CENTER)
   textSize(24);
   
- let y=150
- for(let i =1; i < 6; i++){
-  rect(200, y*i, 100)
- }
+//Images in Front
+
+image(cheer,0,800,1000,200)
 
 
- 
+ //Semi Circle DP
+ fill(170,8,8)
+arc(500,500,500,500, 90,270)
 
+fill(20)
+arc(470,500,350,350, 90,270)
 
+fill(255)
+triangle(450,550,330,400,350,500)
 
-
-
-
-
-
-
-
-
-
-
-//noStroke()
-//let orange = color(225,102,0)
-//let yellow = color(225,234,0)
+ //Semi Circle WV
+ fill(255,170,8)
+ arc(500,500,500,500, 270,90)
 
 
 
-//if(vocal > 50){
-//fill(yellow)
-//}
-//else{
-//fill(orange)
-//}
 
-//let eyesize = map(drum,0,100,70,220)
- 
-//ellipse(200,250,eyesize,eyesize)
-//ellipse(500,250,eyesize,eyesize)
+fill(0)
+ rect(600,450,160,200)
+ triangle(680,400,800,200,520,350)
+ triangle(800,200,850,25,520,350)
+ triangle(520,550,680,550,520,675)
 
-//let mouthsize = map(vocal,0,100,10,300)
-//rect(350,500,300,mouthsize)
+ fill(255)
+ triangle(550,550,670,400,650,500)
+ //Music Visualization
 
 
-
-} 
-
-// let bar_spacing = height / 10;
-// let bar_height = width / 12;
-// let bar_pos_x = width / 2;
-
-
-// // vocal bar is red
-// fill(200, 0, 0);
-// rect(bar_pos_x, height / 2 + 1 * bar_spacing, 4 * vocal, bar_height);
-// fill(0);
-// text("vocals", bar_pos_x, height / 2 + 1 * bar_spacing + 8);
-
-// // drum bar is green
-// fill(0, 200, 0);
-// rect(bar_pos_x, height / 2 + 2 * bar_spacing, 4 * drum, bar_height);
-// fill(0);
-// text("drums", bar_pos_x, height / 2 + 2 * bar_spacing + 8);
-
-// // bass bar is blue
-// fill(50, 50, 240);
-// rect(bar_pos_x, height / 2 + 3 * bar_spacing, 4 * bass, bar_height);
-// fill(0);
-// text("bass", bar_pos_x, height / 2 + 3 * bar_spacing + 8);
-
-// // other bar is white
-// fill(200, 200, 200);
-// rect(bar_pos_x, height / 2 + 4 * bar_spacing, 4 * other, bar_height);
-// fill(0);
-// text("other", bar_pos_x, height / 2 + 4 * bar_spacing + 8);
-// fill(255, 255, 0);
-
-// // display "words"
-// textAlign(CENTER);
-// textSize(vocal);
-// text(words, width/2, height/3);
+}
