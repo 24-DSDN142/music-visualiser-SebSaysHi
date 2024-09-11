@@ -23,7 +23,6 @@ let White = color(225,225,225,90)
 
 
 
-
 stroke(0,150)
 
 //theater
@@ -58,12 +57,6 @@ ellipse(100,600,20,20)
 ellipse(900,600,20,20)
 ellipse(100,730,20,20)
 ellipse(900,730,20,20)
-
-
-
-
-
-
 
 
 //Cheering
@@ -112,9 +105,6 @@ else{
 
 
 
-
-
-
 noStroke()
 
  triangle(50,-200,400,900,700,900)
@@ -125,7 +115,6 @@ noStroke()
 else{
   fill(White)
 }
-
 
  triangle(950,-200,300,900,600,900)
  
