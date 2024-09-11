@@ -10,43 +10,13 @@ cheer = loadImage("Cheering-1.png")
   rectMode(CENTER)
   textSize(24);
   
-//Music Visualzation
+//Images in Front
 
+var cheerY = map(vocal,0,100,800,700)
 
-
-
-
-
-
-//theater
-fill(30)
-rect(0,0,2000,1550)
-
-//subwoofers
-
-fill(70,9,9)
-rect(100,800,160,25)
-
-
-fill(70,9,9)
-rect(900,800,160,25)
-
-
-fill(70)
-rect(100,650,150,300)
-
-fill(70)
-rect(900,650,150,300)
-
-
-
-//Cheering
-
-image(cheer,0,750,1000,250)
+image(cheer,0,cheerY,1000,200)
 fill(150)
-
-image(cheer,0,800,1000,250)
-fill(150)
+rect(0,0,2000,1600)
 
 
  //Semi Circle DP
@@ -69,7 +39,7 @@ triangle(450,550,330,400,350,500)
 fill(0)
  rect(600,450,160,200)
  triangle(680,400,800,200,520,350)
- triangle(800,200,800,50,520,350)
+ triangle(800,200,850,25,520,350)
  triangle(520,550,680,550,520,675)
 
  fill(255)
@@ -77,6 +47,9 @@ fill(0)
 
 
 
+ //Music Visualization
+
 
  
+
 }
